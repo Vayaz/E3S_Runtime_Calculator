@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy UPS 3S Runtime calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="e3s_data.js"></script>
+</head>
+<body>
+    <div id='pageHeader'><h3>EASY UPS 3S Runtime Calculator</h3></div>
+    <div id='app'>
+        <header id='appHeader'>
+            <fieldset>
+            <legend>Load data</legend>
+            <input id='UPS_load'>Input UPS load</input>
+            </fieldset>
+        </header>
+        <div id='appTable'>
+            <table id='mainTable'>
+                <thead>
+                    <tr>
+                        <th> SKU </th>
+                        <th> Nominal Power </th>
+                        <th> Actual Runtime </th>
+                    </tr>
+                </thead>
+            </table>
+            <script src='runtimeCalculator.js'></script>
+        </div>
+    </div>
+</body>
+</html>

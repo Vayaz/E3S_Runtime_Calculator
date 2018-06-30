@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(195, 211, 226);
+    padding:2px 10%;
+}
+#mainHeader{
+    height: 50;
+}
+#app{
+    background-color: white;
+    padding: 5px;
+    border-radius:5px;
+}
+#appTable {
+    border: 1px solid green;
+}
+th{
+    width:auto;
+}
+.hidden{
+    display:none;
+}
