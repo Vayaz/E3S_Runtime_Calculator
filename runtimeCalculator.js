@@ -1,5 +1,4 @@
-let runtimeTable = document.getElementById('UPS_load');
-
-runtimeTable.addEventListener('change',()=>{
-    
+let upsLoad = document.getElementById('UPS_load');
+upsLoad.addEventListener('change',()=>{
+    document.getElementById('mainTable').classList.remove('hidden');
 });
