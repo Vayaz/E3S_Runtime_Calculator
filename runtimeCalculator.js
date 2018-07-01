@@ -7,6 +7,11 @@ upsLoad.addEventListener('change',()=>{
         }
         else{
             row.classList.remove('hidden');
+            row.childNodes.forEach(node=>{
+                if (node.classList.contains('runtimeCell')){
+                    node.innerText= () =>{return ('Runtime at'+upsLoad.value)};
+                }
+            })
         }
     })
 });
