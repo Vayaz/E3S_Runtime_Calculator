@@ -8,6 +8,7 @@ easyUPS3S_data.forEach(element=>{
     dataRow.power = element.power;
     for( let key in element){
         dataCell=document.createElement('td');
+        dataCell.classList.add(key);
         dataCell.innerText=element[key];
         dataRow.appendChild(dataCell);
     }
