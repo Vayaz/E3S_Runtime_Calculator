@@ -9,7 +9,7 @@ upsLoad.addEventListener('change',()=>{
             row.classList.remove('hidden');
             row.childNodes.forEach(node=>{
                 if (node.classList.contains('runtimeCell')){
-                    node.innerText= () =>{return ('Runtime at'+upsLoad.value)};
+                    node.innerText= row.nbBatt;
                 }
             })
         }

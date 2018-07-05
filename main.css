@@ -11,13 +11,19 @@ body {
     border-radius:5px;
 }
 #appTable {
-    width:100%;
     min-width: 200px;
+    padding: 8px;
     border: 1px solid green;
     border-radius: 5px;
 }
-th{
-    width:auto;
+Table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: left;
+    padding:8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 .hidden{
     display:none;

@@ -6,6 +6,8 @@ easyUPS3S_data.forEach(element=>{
     let dataRow = UPSdataTable[i];
     dataRow.id=element.SKU;
     dataRow.power = element.power;
+    dataRow.efficiency = element.dcEfficiency;
+    dataRow.nbBatt=element.nbBatt;
     for( let key in element){
         if (key === 'SKU' || key === 'power' || key === 'SKU'){
         dataCell=document.createElement('td');
