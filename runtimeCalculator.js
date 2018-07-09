@@ -1,8 +1,18 @@
-let upsLoad = document.getElementById('UPS_load');
-upsLoad.addEventListener('change',()=>{
+let loadInput = document.getElementById('UPS_load');
+function inputCorrection(){
+    let input=Number(this.value.replace(/,/,'.'));
+    if (input){
+    tableManipulation(input);
+    }
+    else {
+        alert('Verify your input, please');
+    }
+};
+function runtimeCalc (){};
+function tableManipulation (actualLoad){
     document.getElementById('mainTable').classList.remove('hidden');
     UPSdataTable.forEach(row =>{
-        if (upsLoad.value > row.power){
+        if (actualLoad > row.power){
             row.classList.add('hidden');
         }
         else{
@@ -14,4 +24,6 @@ upsLoad.addEventListener('change',()=>{
             })
         }
     })
-});
+}; 
+loadInput.addEventListener('change',inputCorrection);
+// loadInput.addEventListener('change',tableManipulation);
